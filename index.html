@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Catalog</title>
+    <title>Ariane's Code Projects Catalog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Product Catalog</h1>
-        <input type="text" id="search" placeholder="Search products...">
+        <h1>My Code Projects</h1>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search by name or technology...">
+            <div id="filter-buttons">
+                <button class="filter-btn active" data-tech="all">All</button>
+                <button class="filter-btn" data-tech="HTML">HTML</button>
+                <button class="filter-btn" data-tech="CSS">CSS</button>
+                <button class="filter-btn" data-tech="JavaScript">JavaScript</button>
+            </div>
+        </div>
     </header>
 
     <main>
-        <div id="product-container">
-            <!-- Product cards will be inserted here via JS -->
-        </div>
+        <div id="project-container">
+            </div>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Ariane Oliveira. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
